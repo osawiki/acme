@@ -307,8 +307,8 @@ ul {
 		}
 
 
-label, span, body, strong, b, div, h1, h2, h3, h4, h5, h6, h7, input { font-family: helvetica, "Noto Sans Japanese", 나눔고딕, "맑은 고딕", "Nanum Gothic", sans-serif; }
-div.mw-geshi div, div.mw-geshi div pre,	div.mw-geshi div span, span.mw-geshi, pre.source-css, pre.source-javascript, pre { font-family: 'monospace'; }
+label, span, body, strong, b, div, h1, h2, h3, h4, h5, h6, h7, input { font-family: "Open Sans", Helvetica, arial, 'Apple SD Gothic Neo', '나눔바른고딕', 'NanumBarunGothic', '나눔고딕', 'NanumGothic', '맑은 고딕', 'Malgun Gothic', sans-serif; }
+div.mw-geshi div, div.mw-geshi div pre,	div.mw-geshi div span, span.mw-geshi, pre.source-css, pre.source-javascript, pre { font-family: monospace; }
 
 .mw-content-ltr .toc ul, .mw-content-ltr #toc ul, .mw-content-rtl .mw-content-ltr .toc ul, .mw-content-rtl .mw-content-ltr #toc ul {
     list-style-type: none;
