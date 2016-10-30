@@ -17,7 +17,7 @@ class SkinAcme extends SkinTemplate {
 		parent::initPage( $out );
 		$out->addModuleScripts( 'skins.acme' );
 		
-		$out->addMeta( 'viewport', 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' );
+		$out->addMeta( 'viewport', 'user-scalable=yes,initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0' );
 //		크롬, 파이어폭스 OS, 오페라
 		$out->addMeta('theme-color', 'orange');
 //		윈도우 폰
