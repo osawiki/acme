@@ -195,10 +195,10 @@ if ( $this->data['dataAfterContent'] ): ?>
 				<?php $this->html( 'dataAfterContent' ); ?>
 				<!-- /dataAfterContent -->
 				</div>
+	<?php endif; ?>
 	<?php if ( $this->data['catlinks'] ) {
 	$this->html( 'catlinks' );
 	echo '<br>'; } ?>
-	<?php endif; ?>
 	</div>
 	</div>
 	</div>
