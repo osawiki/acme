@@ -18,10 +18,20 @@ class SkinAcme extends SkinTemplate {
 		$out->addModuleScripts( 'skins.acme' );
 		
 		$out->addMeta( 'viewport', 'user-scalable=yes,initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0' );
+//		seo관련
+		//$out->addMeta( 'description', '오사위키는 유머와 재미를 추구하는 차세대 유머위키 입니다.' );
+		//$out->addMeta( 'keywords', '오사위키,osawiki,OsaWiki,위키' . $this->getSkin()->getTitle() );
 //		크롬, 파이어폭스 OS, 오페라
 		$out->addMeta('theme-color', 'orange');
 //		윈도우 폰
-		$out->addMeta('msapplication-navbutton-color', 'orange'); 
+		$out->addMeta('msapplication-navbutton-color', 'orange');
+//		트위터 카드
+		$out->addMeta('twitter:card', 'summary');
+		$out->addMeta('twitter:site', '@osawiki');
+		$out->addMeta('twitter:title', $this->getSkin()->getTitle() );
+		$out->addMeta('twitter:description', $out->mBodytext );
+		$out->addMeta('twitter:creator', '@wikicocoa');
+		//$out->addMeta('twitter:image', 'https://www.osawiki.com/w/skins/osa/img/twit.png');
 	}//end initPage
 
 	/**
@@ -89,13 +99,21 @@ class AcmeTemplate extends BaseTemplate {
                       </a>
                       <ul aria-labelledby="<?php echo $this->msg($theMsg); ?>" role="menu" class="dropdown-menu" <?php $this->html( 'userlangattributes' ); ?>>
 <li id="t-bell"><a href="<?php echo $url_prefix; ?>특수:필요한문서"><i class="fa fa-bell" aria-hidden="true"></i> 작성 필요</a></li>
-<li id="t-puzzle"><a href="<?php echo $url_prefix; ?>특수:짧은문서"><i class="fa fa-puzzle-piece" aria-hidden="true"></i> 짧은 문서</a></li>
-<li id="t-book"><a href="<?php echo $url_prefix; ?>위키:도움말"><i class="fa fa-book" aria-hidden="true"></i> 도움말</a></li>
-<li id="t-gavel"><a href="<?php echo $url_prefix; ?>위키:규정"><i class="fa fa-gavel" aria-hidden="true"></i> 규정</a></li>					
-<li id="t-upload"><a href="<?php echo $url_prefix; ?>%ED%8A%B9%EC%88%98:%EC%98%AC%EB%A6%AC%EA%B8%B0" title="파일 올리기 [Alt+Shift+u]" accesskey="u"><i class="fa fa-upload" aria-hidden="true"></i> 파일 올리기</a></li>
+<li id="t-puzzle"><a href="<?php echo $url_prefix; ?>특수:짧은문서"><i class="fa fa-puzzle-piece" aria-hidden="true"></i> 짧은 문서</a></li>				
+<li id="t-upload"><a href="<?php echo $url_prefix; ?>special:upload" title="파일 올리기 [Alt+Shift+u]" accesskey="u"><i class="fa fa-upload" aria-hidden="true"></i> 파일 올리기</a></li>
 						<li id="t-re"><?php echo '<a href="'.$url_prefix.'index.php?title=특수:가리키는문서/'.$_URITITLE.'">';?><i class="fa fa-repeat" aria-hidden="true"></i> 역 링크</a></li>
 						<li id="t-Special"><?php echo Linker::linkKnown( SpecialPage::getTitleFor( '특수문서', null ), '<i class="fa fa-cog" aria-hidden="true"></i> 특수 문서', array( 'title' => '특수 문서' ) ); ?></li>
 						
+						</ul>
+				</li>
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-close-others="false" data-delay="0" data-hover="dropdown" data-toggle="dropdown" href="javascript:void(0);"><i class="fa fa-external-link" aria-hidden="true"></i>  <span id="mobile">퀵링크</span> <i class="fa fa-angle-down"></i>
+					</a>
+                      <ul aria-labelledby="<?php echo $this->msg($theMsg); ?>" role="menu" class="dropdown-menu" <?php $this->html( 'userlangattributes' ); ?>>
+<li id="t-re"><?php echo '<a href="https://bbs.osawiki.com">';?><i class="fa fa-external-link" aria-hidden="true"></i> 오사위키 게시판</a></li>
+<li id="t-re"><?php echo '<a href="http://status.osawiki.com">';?><i class="fa fa-external-link" aria-hidden="true"></i> 오사위키 상태 확인</a></li>
+<li id="t-re"><?php echo '<a href="https://www.facebook.com/%EC%98%A4%EC%82%AC%EC%9C%84%ED%82%A4-270530999969921">';?><i class="fa fa-facebook-official" aria-hidden="true"></i> 공식 페이스북</a></li>
+<li id="t-re"><?php echo '<a href="https://twitter.com/osawiki">';?><i class="fa fa-twitter" aria-hidden="true"></i> 공식 트위터</a></li>
 						</ul>
 				</li>
 				
@@ -193,7 +211,8 @@ if ( $this->data['dataAfterContent'] ): ?>
             <div class="row">
                   <div class="copyright">
                     <p><?php $this->html( 'copyright' ) ?></p>
-					<a href="https://www.mediawiki.org"><img style="margin-right: 10px; " class="pull-right" src="https://www.mediawiki.org/static/images/poweredby_mediawiki_88x31.png"></a>
+					<a rel="license" href="//creativecommons.org/licenses/by-sa/4.0/"><img alt="크리에이티브 커먼즈 라이선스" style="border-width:0" class="pull-right" src="//i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
+					<a href="https://www.mediawiki.org"><img style="margin-right: 10px; " class="pull-right" src="https://www.osawiki.com/w/resources/assets/poweredby_mediawiki_88x31.png"></a>
 					<a href="https://shapebootstrap.net"><img style="margin-right: 10px; margin-top:5px; margin-bottom: 20px;" class="pull-right" src="https://shapebootstrap.net/templates/default/images/presets/preset1/logo.png"></a>	
                   </div>
             </div>
