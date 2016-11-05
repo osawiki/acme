@@ -899,6 +899,52 @@ box-shadow: 0 2px 5px rgba(50,50,50,0.1);
   width: 20em;
   font-size: smaller;
 }
+
+/* styles for bordered infobox with merged rows */
+.infobox.bordered .mergedtoprow td,
+.infobox.bordered .mergedtoprow th {
+  border: 0;
+  border-top: 1px solid #aaa;
+  border-right: 1px solid #aaa;
+}
+.infobox.bordered .mergedrow td,
+.infobox.bordered .mergedrow th {
+  border: 0;
+  border-right: 1px solid #aaa;
+}
+/* styles for geography infoboxes, e.g. countries, country subdivisions, cities, etc. */
+.infobox.geography {
+  text-align: left;
+  border-collapse: collapse;
+  line-height: 1.2em;
+  font-size: smaller;
+}
+.infobox.geography  td,
+.infobox.geography  th {
+  border-top: solid 1px #aaa;
+  padding: 0.4em 0.6em;
+}
+.infobox.geography .mergedtoprow td,
+.infobox.geography .mergedtoprow th {
+  border-top: solid 1px #aaa;
+  padding: 0.4em 0.6em 0.2em;
+}
+.infobox.geography .mergedrow td,
+.infobox.geography .mergedrow th {
+  border: 0;
+  padding: 0 0.6em 0.2em;
+}
+.infobox.geography .mergedbottomrow td,
+.infobox.geography .mergedbottomrow th {
+  border-top: 0;
+  border-bottom: solid 1px #aaa;
+  padding: 0 0.6em 0.4em;
+}
+.infobox.geography .maptable td,
+.infobox.geography .maptable th {
+  border: 0;
+  padding: 0;
+}
 .external.free {
     color: green;
 }
