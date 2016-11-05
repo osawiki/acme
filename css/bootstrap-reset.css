@@ -875,7 +875,7 @@ border-color: #aaa;
     color: #015301;
 }
 a.external.free::before {
-content: "\f08e";
+content: "\f14c";
 color: #008000;
 background-color: #FFF;
 font-family: FontAwesome;
