@@ -661,7 +661,7 @@ ins#noadsense {
     color: #015301;
 }
 .copyright p a::before {
-    content: "\f08b";
+    content: "\f14c";
 color: #008000;
 background-color: transparent;
 font-family: FontAwesome;
@@ -837,7 +837,7 @@ form.mw-ui-vform.mw-ui-container.visualClear {
     margin: auto;
 }
 a.external.text::before {
-    content: "\f08b";
+    content: "\f14c";
     color: #008000;
     background-color: #FFF;
     font-family: FontAwesome;

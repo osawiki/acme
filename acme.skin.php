@@ -30,7 +30,6 @@ class SkinAcme extends SkinTemplate {
 		$out->addMeta('twitter:site', '@osawiki');
 		$out->addMeta('twitter:title', $this->getSkin()->getTitle() );
 		$out->addMeta('twitter:description', $out->mBodytext );
-		$out->addMeta('twitter:creator', '@wikicocoa');
 		//$out->addMeta('twitter:image', 'https://www.osawiki.com/w/skins/osa/img/twit.png');
 	}//end initPage
 
