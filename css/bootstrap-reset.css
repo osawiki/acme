@@ -850,23 +850,54 @@ float: right;
 margin-bottom: 10px;
 box-shadow: 0 2px 5px rgba(50,50,50,0.1);
 }
+.infobox {
+  float: right;
+  clear: right;
+  margin: 0.5em 0 0.5em 1em;
+  padding: 0.2em;
+  border: 1px solid #aaa;
+  background: #f9f9f9;
+  font-size: small;
+  width: 25em;
+}
+.infobox td,
+.infobox th {
+  vertical-align: top;
+}
 .infobox caption {
-    border: 1px solid #aaa;
-    padding: 5px;
-    background: #f9f9f9;
-    border-bottom: none;
-box-shadow: 0 2px 5px rgba(50,50,50,0.1);
+  font-size: 125%;
+  font-weight: bold;
 }
-.infobox tbody tr {
-    border: 1px solid #aaa;
+
+.infobox caption.colored {
+  margin: 0.25em 0 0.5em 0;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-top-width: 0.3em;
+  border-bottom-width: 0.3em;
+/* 제목에 색이 필요할 때 class 지정 후 border-color 스타일 지정 */
 }
-.infobox tbody tr th {
-    padding: 5px;
-border-right: 1px solid #aaa;
+
+.infobox th {
+  white-space: nowrap;
 }
-.infobox tbody tr td {
-    padding: 5px;
-border-color: #aaa;
+.infobox th[colspan="2"] {
+  text-align: center;
+}
+.infobox.bordered {
+  border-collapse: collapse;
+}
+.infobox.bordered td,
+.infobox.bordered th {
+  border: 1px solid #aaa;
+}
+.infobox.bordered .borderless td,
+.infobox.bordered .borderless th {
+  border: 0;
+}
+.infobox.sisterproject {
+  width: 20em;
+  font-size: smaller;
 }
 .external.free {
     color: green;
@@ -906,23 +937,122 @@ font-family: FontAwesome;
     display: block;
 width: 250px;
 }
-.navbox.collapsible.autocollapse.nowraplinks tbody tr th {
-    border: 1px solid #aaa;
-padding: 5px;
-background-color: #f9f9f9;
+table.navbox {      /* 둘러보기 상자 내용에 대한 스타일 */
+  border: 1px solid #aaa;
+  width: 100%;
+  margin: auto;
+  clear: both;
+  font-size: 88%;
+  text-align: center;
+  padding: 1px;
 }
-.navbox.collapsible.autocollapse.nowraplinks tbody tr td {
-    border: 1px solid #aaa;
-padding: 5px;
-background-color: #f9f9f9;
+table.navbox + table.navbox {  /* Single pixel border between adjacent navboxes */
+  margin-top: -1px;      /* (doesn't work for IE6, but that's okay)     */
 }
-.navbox.collapsible.autocollapse.nowraplinks tbody tr td div br {
-    display: none;
+.navbox-title,
+.navbox-abovebelow,
+table.navbox th {
+  text-align: center;    /* Title and above/below styles */
+  padding-left: 1em;
+  padding-right: 1em;
 }
-.navbox.collapsible.autocollapse.nowraplinks {
-    border: 1px solid #aaa;
-    border-collapse: collapse;
-background-color: #f9f9f9;
+.navbox-group {      /* 그룹 스타일 */
+  white-space: nowrap;
+  text-align: right;
+  font-weight: bold;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.navbox, .navbox-subgroup {
+  background: #fdfdfd;   /* 배경색 */
+}
+.navbox-list {
+  border-color: #fdfdfd;   /* 배경색과 동일해야 함 */
+}
+.navbox-title,
+table.navbox th {
+  background: #ccccff;   /* Level 1 color */
+}
+.navbox-abovebelow,
+.navbox-group,
+.navbox-subgroup .navbox-title {
+  background: #ddddff;   /* Level 2 color */
+}
+.navbox-subgroup .navbox-group, .navbox-subgroup .navbox-abovebelow {
+  background: #e6e6ff;   /* Level 3 color */
+}
+.navbox-even {
+  background: #f7f7f7;   /* Even row striping */
+}
+.navbox-odd {
+  background: transparent; /* Odd row striping */
+}
+
+.collapseButton {      /* 'show'/'hide' buttons created dynamically */
+  float: right;      /* by the CollapsibleTables javascript in  */
+  font-weight: normal;   /* [[MediaWiki:Common.js]]are styled here  */
+  text-align: right;   /* so they can be customised.        */
+  width: auto;
+}
+.navbox .collapseButton {  /* In navboxes, the show/hide button balances */
+  width: 6em;      /* the vde links from [[Template:Tnavbar]],   */
+}              /* so they need to be the same width.     */
+
+/*  ctrl+v from en: */
+div.NavFrame {
+  margin: 0;
+  padding: 4px;
+  border: 1px solid #aaa;
+  text-align: center;
+  border-collapse: collapse;
+  font-size: 95%;
+}
+div.NavFrame + div.NavFrame {
+  border-top-style: none;
+  border-top-style: hidden;
+}
+div.NavPic {
+  background-color: #fff;
+  margin: 0;
+  padding: 2px;
+  float: left;
+}
+div.NavFrame div.NavHead {
+  height: 1.6em;
+  font-weight: bold;
+  background-color: #ccf;
+  position: relative;
+}
+div.NavFrame p,
+div.NavFrame div.NavContent,
+div.NavFrame div.NavContent p {
+  font-size: 100%;
+}
+div.NavEnd {
+  margin: 0;
+  padding: 0;
+  line-height: 1px;
+  clear: both;
+}
+a.NavToggle {
+  position: absolute;
+  top: 0;
+  right: 3px;
+  font-weight: normal;
+  font-size: 90%;
+}
+
+/* */
+/* Prevent line breaks in silly places:
+   1) Where desired
+   2) Links when we don't want them to
+   3) Bold "links" to the page itself
+   4) Ref tags with group names <ref group="Note"> --> "[Note 1]" */
+.nowrap,
+.nowraplinks a,
+.nowraplinks .selflink,
+sup.reference a {
+    white-space: nowrap;
 }
 .comment {
     word-break: break-all;
