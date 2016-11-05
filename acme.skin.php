@@ -197,8 +197,9 @@ if ( $this->data['dataAfterContent'] ): ?>
 				</div>
 	<?php endif; ?>
 	<?php if ( $this->data['catlinks'] ) {
+	echo '<br>';
 	$this->html( 'catlinks' );
-	echo '<br>'; } ?>
+	} ?>
 	</div>
 	</div>
 	</div>
