@@ -842,6 +842,9 @@ a.external.text::before {
     background-color: #FFF;
     font-family: FontAwesome;
 }
+table {
+	border-collapse: separate; //infobox boder fix
+}
 .infobox {
     border: 1px solid #aaa;
     background: #f9f9f9;
