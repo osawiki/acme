@@ -111,8 +111,8 @@ class AcmeTemplate extends BaseTemplate {
                       <ul aria-labelledby="<?php echo $this->msg($theMsg); ?>" role="menu" class="dropdown-menu" <?php $this->html( 'userlangattributes' ); ?>>
 <li id="t-re"><?php echo '<a href="https://bbs.osawiki.com">';?><i class="fa fa-external-link" aria-hidden="true"></i> 오사위키 게시판</a></li>
 <li id="t-re"><?php echo '<a href="http://status.osawiki.com">';?><i class="fa fa-external-link" aria-hidden="true"></i> 오사위키 상태 확인</a></li>
-<li id="t-re"><?php echo '<a href="https://www.facebook.com/%EC%98%A4%EC%82%AC%EC%9C%84%ED%82%A4-270530999969921">';?><i class="fa fa-facebook-official" aria-hidden="true"></i> 공식 페이스북</a></li>
-<li id="t-re"><?php echo '<a href="https://twitter.com/osawiki">';?><i class="fa fa-twitter" aria-hidden="true"></i> 공식 트위터</a></li>
+<li id="t-re"><?php echo '<a target="_blank" href="https://www.facebook.com/%EC%98%A4%EC%82%AC%EC%9C%84%ED%82%A4-270530999969921">';?><i class="fa fa-facebook-official" aria-hidden="true"></i> 공식 페이스북</a></li>
+<li id="t-re"><?php echo '<a target="_blank" href="https://twitter.com/osawiki">';?><i class="fa fa-twitter" aria-hidden="true"></i> 공식 트위터</a></li>
 						</ul>
 				</li>
 				
