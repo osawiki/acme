@@ -22,9 +22,9 @@ class SkinAcme extends SkinTemplate {
 		//$out->addMeta( 'description', '오사위키는 유머와 재미를 추구하는 차세대 유머위키 입니다.' );
 		//$out->addMeta( 'keywords', '오사위키,osawiki,OsaWiki,위키' . $this->getSkin()->getTitle() );
 //		크롬, 파이어폭스 OS, 오페라
-		$out->addMeta('theme-color', 'orange');
+		$out->addMeta('theme-color', '#ffc000');
 //		윈도우 폰
-		$out->addMeta('msapplication-navbutton-color', 'orange');
+		$out->addMeta('msapplication-navbutton-color', '#ffc000');
 //		트위터 카드
 		$out->addMeta('twitter:card', 'summary');
 		$out->addMeta('twitter:site', '@osawiki');
