@@ -106,7 +106,6 @@ class AcmeTemplate extends BaseTemplate {
 								echo $this->makeListItem( $key, $item );
 							}
 						?>
-						<li id="t-re"><?php echo '<a href="/w/index.php?title=특수:가리키는문서/'.$_URITITLE.'">';?>역링크</a></li>
 					</ul>
 				</li>
 			<a class="dropdown-toggle" data-close-others="false" data-delay="0" data-hover=
@@ -116,7 +115,7 @@ class AcmeTemplate extends BaseTemplate {
 <li id="t-bell"><a href="<?php echo $url_prefix; ?>%ED%8A%B9%EC%88%98:%ED%95%84%EC%9A%94%ED%95%9C%EB%AC%B8%EC%84%9C"><i class="fa fa-bell" aria-hidden="true"></i> 작성 필요</a></li>
 <li id="t-puzzle"><a href="<?php echo $url_prefix; ?>%ED%8A%B9%EC%88%98:%EC%A7%A7%EC%9D%80%EB%AC%B8%EC%84%9C"><i class="fa fa-puzzle-piece" aria-hidden="true"></i> 짧은 문서</a></li>				
 <li id="t-upload"><a href="<?php echo $url_prefix; ?>special:upload" title="파일 올리기 [Alt+Shift+u]" accesskey="u"><i class="fa fa-upload" aria-hidden="true"></i> 파일 올리기</a></li>
-<li id="t-re"><?php echo '<a href="'.$url_prefix.'index.php?title=특수:가리키는문서/'.$_URITITLE.'">';?><i class="fa fa-repeat" aria-hidden="true"></i> 역 링크</a></li>
+<li id="t-re"><?php echo '<a href="/w/index.php?title=특수:가리키는문서/'.$_URITITLE.'">';?><i class="fa fa-repeat" aria-hidden="true"></i> 역 링크</a></li>
 <li id="t-Special"><?php echo Linker::linkKnown( SpecialPage::getTitleFor( '특수문서', null ), '<i class="fa fa-cog" aria-hidden="true"></i> 특수 문서', array( 'title' => '특수 문서' ) ); ?></li>
 <li id="t-frown"><a href="<?php echo $url_prefix; ?>%ED%8A%B9%EC%88%98:%EC%99%B8%ED%86%A8%EC%9D%B4%EB%AC%B8%EC%84%9C"><i class="fa fa-frown-o" aria-hidden="true"></i> 외톨이 문서</a></li>
 						
