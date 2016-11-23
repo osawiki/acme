@@ -796,8 +796,8 @@ blockquote {
     display: block;
 }
 div#mw-content-text > img {
-    max-width: 100%; !important;
-    height: auto; !important;
+    max-width: 100%;
+    height: auto;
 }
 iframe {
     max-width: 100%;
