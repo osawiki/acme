@@ -796,7 +796,7 @@ blockquote {
     display: block;
 }
 
-#mw-content-text > img {
+.mw-content-ltr > img {
     max-width: 100%; !important;
     height: auto; !important;
 }
