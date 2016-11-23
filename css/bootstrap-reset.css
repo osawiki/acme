@@ -795,7 +795,8 @@ blockquote {
 .subpages {
     display: block;
 }
-div#mw-content-text > img {
+
+img {
     max-width: 100%;
     height: auto;
 }
