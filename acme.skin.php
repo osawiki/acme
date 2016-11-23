@@ -93,9 +93,6 @@ class AcmeTemplate extends BaseTemplate {
 				<?php $theMsg = 'toolbox';
 				$theData = array_reverse($this->getToolbox()); ?>
 				<li class="dropdown">
-		<li class="dropdown">
-                   <a class="dropdown-toggle" data-close-others="false" data-delay="0" data-hover="dropdown" data-toggle="dropdown" href="#">문서 도구 <i class="fa fa-angle-down"></i></a>
-				<li class="dropdown">
                    <a class="dropdown-toggle" data-close-others="false" data-delay="0" data-hover="dropdown" data-toggle="dropdown" href="#">문서 도구 <i class="fa fa-angle-down"></i></a>
                       <ul aria-labelledby="<?php echo $this->msg($theMsg); ?>" role="menu" class="dropdown-menu" <?php $this->html( 'userlangattributes' ); ?>>
 						<?php
@@ -108,6 +105,7 @@ class AcmeTemplate extends BaseTemplate {
 						?>
 					</ul>
 				</li>
+		<li class="dropdown">
 			<a class="dropdown-toggle" data-close-others="false" data-delay="0" data-hover=
                       "dropdown" data-toggle="dropdown" href="javascript:void(0);"><i class="fa fa-wrench" aria-hidden="true"></i>  <span id="mobile">도구</span> <i class="fa fa-angle-down"></i>
                       </a>
