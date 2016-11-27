@@ -103,6 +103,7 @@ class AcmeTemplate extends BaseTemplate {
 								echo $this->makeListItem( $key, $item );
 							}
 						?>
+						<li id="t-re"><?php echo '<a href="/w/index.php?title=%ED%8A%B9%EC%88%98:%EA%B0%80%EB%A6%AC%ED%82%A4%EB%8A%94%EB%AC%B8%EC%84%9C/'.$_URITITLE.'">';?>역링크</a></li>
 					</ul>
 				</li>
 		<li class="dropdown">
