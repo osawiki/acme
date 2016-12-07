@@ -20,7 +20,7 @@ class SkinAcme extends SkinTemplate {
 		$out->addMeta( 'viewport', 'user-scalable=yes,initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0' );
 //		seo관련
 		//$out->addMeta( 'description', '오사위키는 유머와 재미를 추구하는 차세대 유머위키 입니다.' );
-		//$out->addMeta( 'keywords', '오사위키,osawiki,OsaWiki,위키' . $this->getSkin()->getTitle() );
+		//$out->addMeta( 'keywords', '오사위키,osawiki,OsaWiki,위키,wiki' . $this->getSkin()->getTitle() );
 //		크롬, 파이어폭스 OS, 오페라
 		$out->addMeta('theme-color', '#ffb00e');
 //		윈도우 폰
