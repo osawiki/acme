@@ -841,14 +841,7 @@ a.external.text::before {
     font-family: FontAwesome;
 }
 
-.infobox {
-    border: 1px solid #aaa;
-    background: #f9f9f9;
-    border-collapse: collapse;
-float: right;
-margin-bottom: 10px;
-box-shadow: 0 2px 5px rgba(50,50,50,0.1);
-}
+/** 정보상자 **/
 .infobox {
   float: right;
   clear: right;
@@ -911,6 +904,7 @@ box-shadow: 0 2px 5px rgba(50,50,50,0.1);
   border: 0;
   border-right: 1px solid #aaa;
 }
+
 /* styles for geography infoboxes, e.g. countries, country subdivisions, cities, etc. */
 .infobox.geography {
   text-align: left;
