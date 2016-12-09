@@ -104,21 +104,11 @@ class AcmeTemplate extends BaseTemplate {
 							}
 						?>
 						<li id="t-re"><?php echo '<a href="/w/index.php?title=%ED%8A%B9%EC%88%98:%EA%B0%80%EB%A6%AC%ED%82%A4%EB%8A%94%EB%AC%B8%EC%84%9C/'.$_URITITLE.'">';?>역링크</a></li>
+						<li id="t-bell"><a href="<?php echo $url_prefix; ?>%ED%8A%B9%EC%88%98:%ED%95%84%EC%9A%94%ED%95%9C%EB%AC%B8%EC%84%9C"></i>작성 필요</a></li>
+						<li id="t-sharticle"><a href="<?php echo $url_prefix; ?>%ED%8A%B9%EC%88%98:%EC%A7%A7%EC%9D%80%EB%AC%B8%EC%84%9C"></i>짧은 문서</a></li>
+						<li id="t-frown"><a href="<?php echo $url_prefix; ?>%ED%8A%B9%EC%88%98:%EC%99%B8%ED%86%A8%EC%9D%B4%EB%AC%B8%EC%84%9C">외톨이(고립된) 문서</a></li>						
+						<li id="t-Special"><?php echo Linker::linkKnown( SpecialPage::getTitleFor( '특수문서', null ), '특수 문서', array( 'title' => '특수 문서' ) ); ?></li>
 					</ul>
-				</li>
-		<li class="dropdown">
-			<a class="dropdown-toggle" data-close-others="false" data-delay="0" data-hover=
-                      "dropdown" data-toggle="dropdown" href="javascript:void(0);"><i class="fa fa-wrench" aria-hidden="true"></i>  <span id="mobile">도구</span> <i class="fa fa-angle-down"></i>
-                      </a>
-                      <ul aria-labelledby="<?php echo $this->msg($theMsg); ?>" role="menu" class="dropdown-menu" <?php $this->html( 'userlangattributes' ); ?>>
-<li id="t-bell"><a href="<?php echo $url_prefix; ?>%ED%8A%B9%EC%88%98:%ED%95%84%EC%9A%94%ED%95%9C%EB%AC%B8%EC%84%9C"><i class="fa fa-bell" aria-hidden="true"></i> 작성 필요</a></li>
-<li id="t-puzzle"><a href="<?php echo $url_prefix; ?>%ED%8A%B9%EC%88%98:%EC%A7%A7%EC%9D%80%EB%AC%B8%EC%84%9C"><i class="fa fa-puzzle-piece" aria-hidden="true"></i> 짧은 문서</a></li>				
-<li id="t-upload"><a href="<?php echo $url_prefix; ?>special:upload" title="파일 올리기 [Alt+Shift+u]" accesskey="u"><i class="fa fa-upload" aria-hidden="true"></i> 파일 올리기</a></li>
-<li id="t-re"><?php echo '<a href="/w/index.php?title=특수:가리키는문서/'.$_URITITLE.'">';?><i class="fa fa-repeat" aria-hidden="true"></i> 역 링크</a></li>
-<li id="t-Special"><?php echo Linker::linkKnown( SpecialPage::getTitleFor( '특수문서', null ), '<i class="fa fa-cog" aria-hidden="true"></i> 특수 문서', array( 'title' => '특수 문서' ) ); ?></li>
-<li id="t-frown"><a href="<?php echo $url_prefix; ?>%ED%8A%B9%EC%88%98:%EC%99%B8%ED%86%A8%EC%9D%B4%EB%AC%B8%EC%84%9C"><i class="fa fa-frown-o" aria-hidden="true"></i> 외톨이 문서</a></li>
-						
-						</ul>
 				</li>
 				<li class="dropdown">
 					<a class="dropdown-toggle" data-close-others="false" data-delay="0" data-hover="dropdown" data-toggle="dropdown" href="javascript:void(0);"><i class="fa fa-external-link" aria-hidden="true"></i>  <span id="mobile">퀵링크</span> <i class="fa fa-angle-down"></i>
@@ -145,6 +135,7 @@ class AcmeTemplate extends BaseTemplate {
 				<a href="javascript:void(0);" class="dropdown-toggle" type="button" id="login-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><?php echo'<img style="width: 32px;" class="profile-img" src="https://secure.gravatar.com/avatar/'.$email.'" /></a>' ; ?></a>
 					<ul class="dropdown-menu">
 						<li id="pt-mypage"><?php echo Linker::linkKnown( Title::makeTitle( NS_USER, $wgUser->getName() ), '<i class="fa fa-user" aria-hidden="true"></i>  '.$wgUser->getName(), array( 'title' => '사용자 문서를 보여줍니다.' ) ); ?></li>
+						<li id="pt-notifications"><?php echo Linker::linkKnown( SpecialPage::getTitleFor( 'Notifications', null ), '<i class="fa fa-comment" aria-hidden="true"></i> 알림', array( 'title' => '나에게 온 알림을 보여줍니다.' ) ); ?></li>
 						<li id="pt-preferences"><?php echo Linker::linkKnown( SpecialPage::getTitleFor( 'preferences', null ), '<i class="fa fa-cog" aria-hidden="true"></i>  환경 설정', array( 'title' => '환경 설정을 불러옵니다.' ) ); ?></li>
 						<li id="pt-watchlist"><?php echo Linker::linkKnown( SpecialPage::getTitleFor( 'watchlist', null ), '<i class="fa fa-bookmark" aria-hidden="true"></i>  주시 문서', array( 'title' => '주시문서를 불러옵니다.') ); ?></li>
 						<li id="pt-mycontris"><?php echo Linker::linkKnown( SpecialPage::getTitleFor( 'Contributions', $wgUser->getName() ), '<i class="fa fa-pencil" aria-hidden="true"></i> 기여 문서', array( 'title' => '내 기여 목록을 불러옵니다.' ) ); ?></li>
