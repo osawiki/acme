@@ -219,7 +219,7 @@ if ( $this->data['dataAfterContent'] ): ?>
 					<p><?php $this->html( 'lastmod' ) ?></p>
                     <p><?php $this->html( 'copyright' ) ?></p>
 					<p>
-					<ul class="list-inline">
+					<ul class="list-inline pull-left">
 						<li><a href = "<?php echo $url_prefix; ?>%EC%98%A4%EC%82%AC%EC%9C%84%ED%82%A4:%EC%9D%B4%EC%9A%A9%EC%95%BD%EA%B4%80">Term of Service</a></li>
 						<li><a href = "<?php echo $url_prefix; ?>%EC%98%A4%EC%82%AC%EC%9C%84%ED%82%A4:%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4%EC%B7%A8%EA%B8%89%EB%B0%A9%EC%B9%A8">Privacy policy</a></li>
 						<li><a href = "<?php echo $url_prefix; ?>%EC%98%A4%EC%82%AC%EC%9C%84%ED%82%A4:%EC%86%8C%EA%B0%9C">오사위키 소개</a></li>
