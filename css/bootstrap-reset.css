@@ -122,6 +122,13 @@ ul {
     padding: 0;
 }
 
+.copyright ul {
+    list-style-type: none;
+    list-style-image: none;
+    margin: 0;
+    padding: 0;
+}
+
 /*button*/
 
 .btn-default {
