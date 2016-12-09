@@ -218,15 +218,15 @@ if ( $this->data['dataAfterContent'] ): ?>
                   <div class="copyright">
 					<p><?php $this->html( 'lastmod' ) ?></p>
                     <p><?php $this->html( 'copyright' ) ?></p>
-					<a rel="license" href="//creativecommons.org/licenses/by-sa/4.0/"><img alt="크리에이티브 커먼즈 라이선스" style="border-width:0" class="pull-right" src="//i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
-					<a href="https://www.mediawiki.org"><img style="margin-right: 10px; " class="pull-right" src="https://www.osawiki.com/w/resources/assets/poweredby_mediawiki_88x31.png" srcset="/w/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /w/resources/assets/poweredby_mediawiki_176x62.png 2x"></a>
-					<a href="https://shapebootstrap.net"><img style="margin-right: 10px; margin-top:5px; margin-bottom: 20px;" class="pull-right" src="https://shapebootstrap.net/templates/default/images/presets/preset1/logo.png"></a>	
 					<ul class="list-inline">
 						<li><a href = "<?php echo $url_prefix; ?>%EC%98%A4%EC%82%AC%EC%9C%84%ED%82%A4:%EC%9D%B4%EC%9A%A9%EC%95%BD%EA%B4%80">Term of Service</a></li>
 						<li><a href = "<?php echo $url_prefix; ?>%EC%98%A4%EC%82%AC%EC%9C%84%ED%82%A4:%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4%EC%B7%A8%EA%B8%89%EB%B0%A9%EC%B9%A8">Privacy policy</a></li>
 						<li><a href = "<?php echo $url_prefix; ?>%EC%98%A4%EC%82%AC%EC%9C%84%ED%82%A4:%EC%86%8C%EA%B0%9C">오사위키 소개</a></li>
 						<li><a href = "<?php echo $url_prefix; ?>%EC%98%A4%EC%82%AC%EC%9C%84%ED%82%A4:%EC%B1%85%EC%9E%84%EC%9D%98_%ED%95%9C%EA%B3%84%EC%99%80_%EB%B2%95%EC%A0%81%EA%B3%A0%EC%A7%80">Disclaimer</a></li>
 					</ul>
+					<a rel="license" href="//creativecommons.org/licenses/by-sa/4.0/"><img alt="크리에이티브 커먼즈 라이선스" style="border-width:0" class="pull-right" src="//i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
+					<a href="https://www.mediawiki.org"><img style="margin-right: 10px; " class="pull-right" src="https://www.osawiki.com/w/resources/assets/poweredby_mediawiki_88x31.png" srcset="/w/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /w/resources/assets/poweredby_mediawiki_176x62.png 2x"></a>
+					<a href="https://shapebootstrap.net"><img style="margin-right: 10px; margin-top:5px; margin-bottom: 20px;" class="pull-right" src="https://shapebootstrap.net/templates/default/images/presets/preset1/logo.png"></a>
 				  </div>
             </div>
         </div>
