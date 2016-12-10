@@ -89,7 +89,7 @@ class AcmeTemplate extends BaseTemplate {
 				</li>
 				<li><?php echo Linker::linkKnown( SpecialPage::getTitleFor( 'RecentChanges', null ), '<i class="fa fa-refresh" aria-hidden="true"></i>  <span id="mobile">바뀐 문서<span>'); ?></li>
 				<li><?php echo Linker::linkKnown( SpecialPage::getTitleFor( 'Random', null ), '<i class="fa fa-random" aria-hidden="true"></i> <span id="mobile">랜덤</span>'); ?></li>
-				<li><a href = "https://bbs.osawiki.com/notice"><i class="fa fa-check" aria-hidden="true"></i> 공지사항</li>
+				<li><a href = "https://bbs.osawiki.com/notice"><i class="fa fa-check" aria-hidden="true"></i> 공지사항</a></li>
 				<?php $theMsg = 'toolbox';
 				$theData = array_reverse($this->getToolbox()); ?>
 				<li class="dropdown">
