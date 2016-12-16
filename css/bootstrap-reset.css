@@ -316,7 +316,7 @@ ul {
 
 
 label, span, body, strong, b, div, h1, h2, h3, h4, h5, h6, h7, input { font-family: "Open Sans", Helvetica, arial, 'Apple SD Gothic Neo', '나눔바른고딕', 'NanumBarunGothic', '나눔고딕', 'NanumGothic', '맑은 고딕', 'Malgun Gothic', sans-serif; }
-div.mw-geshi div, div.mw-geshi div pre,	div.mw-geshi div span, span.mw-geshi, pre.source-css, pre.source-javascript, pre, .mw-highlight { font-family: monospace; }
+div.mw-geshi div, div.mw-geshi div pre,	div.mw-geshi div span, span.mw-geshi, pre.source-css, pre.source-javascript, pre, code { font-family: monospace; }
 
 .mw-content-ltr .toc ul, .mw-content-ltr #toc ul, .mw-content-rtl .mw-content-ltr .toc ul, .mw-content-rtl .mw-content-ltr #toc ul {
     list-style-type: none;
