@@ -805,9 +805,10 @@ blockquote {
     max-width: 100%; !important;
     height: auto; !important;
 }
-iframe {
-    max-width: 100%;
-}
+@media (max-width: 520px){ iframe {
+    max-width: 100%; !important;
+    height: 200px; !important;
+} }
 #searchInput {
     box-shadow: 0 2px 5px rgba(50,50,50,0.1);
 }
