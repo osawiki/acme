@@ -29,7 +29,7 @@ class SkinAcme extends SkinTemplate {
 		$out->addMeta('twitter:card', 'summary');
 		$out->addMeta('twitter:site', '@osawiki');
 		$out->addMeta('twitter:title', $this->getSkin()->getTitle() );
-		$out->addMeta('twitter:description', $pageData['extract'][$contentKey] );
+		$out->addMeta('twitter:description', $out['extract'][$contentKey] );
 		$out->addMeta('twitter:image', 'https://www.osawiki.com/w/skins/acme/img/twit.png');
 	}//end initPage
 
